@@ -31,6 +31,8 @@ This project was built to master the following technologies:
 * **Transformers:** Introduction to **BERT** and **distilBERT** architctures.
 * **Hugging Face:** Utilizing pre-trained tokenizers and models for state-of-the-art NLP.
 
+* #IMP:- the pipeline is exported as a pkl file that code is not included in the notebook 
+
 ##  Installation
 To replicate this environmen, install the following dependencies:
 
