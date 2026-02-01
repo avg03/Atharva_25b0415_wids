@@ -5,7 +5,7 @@ from typing_extensions import Annotated
 
 app = FastAPI()
 
-# Load pipeline ONCE
+
 with open("sentiment_pipeline.pkl", "rb") as f:
     model = pickle.load(f)
 
@@ -23,8 +23,8 @@ def predict_sentiment(request: SentimentRequest):
 
     label_map = {
         0: "Negative",
-        1: "Neutral",
         2: "Positive"
     }
 
     return {"sentiment": label_map[prediction]}
+
